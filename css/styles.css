@@ -299,6 +299,7 @@ section.active .landing__container::after {
 }
 .comment__form #comment__text {
     grid-area: 2 / 1 / span 1 / span 2;
+    resize: none;
 }
 .comment__form #submit {
     width: 50%;

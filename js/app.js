@@ -66,6 +66,9 @@ function verifyForm(e) {
         return;
     }
     appendComment(name, email, comment)
+    commentForm.querySelector("#name").value = "";
+    commentForm.querySelector("#email").value = "";
+    commentForm.querySelector("#comment__text").value = "";
 }
 
 
