@@ -5,7 +5,6 @@
  * For simplicity, no reset or normalize is added.
  * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
  *
- * TODO: Feel free to make any changes you'd like to personalize your project. Alternatively,  * you can start from scratch!
 */
 
 /* ---- Base Rules ---- */
@@ -273,4 +272,73 @@ section.active .landing__container::after {
     }
 }
 
-/* TODO: Add styles for Comments section and form */
+.comment {
+    margin: 10px 0;
+    padding: 10px;
+    border: cornflowerblue solid 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.comment .name__view {
+    margin: 5px 30px;
+}
+.comment .email__view {
+    margin: 5px 30px;
+    font-style: italic;
+    opacity: 50%;
+}
+
+.comment__form {
+    margin-top: 30px;
+    background-color: rgba(100, 149, 237, 0.35);
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px
+}
+.comment__form #comment__text {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+.comment__form #submit {
+    width: 50%;
+}
+
+#name,
+#email,
+#comment__text,
+#submit {
+    background-color: #FFFD;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#name,
+#email,
+#comment__text {
+    transition: background-color 200ms;
+}
+
+#name:hover,
+#email:hover,
+#comment__text:hover {
+    background-color: #FFFA;
+}
+
+#submit:hover {
+    background-color: #FFFA;
+}
+
+#submit:active {
+    background-color: cornflowerblue;
+}
+
+#name:focus,
+#email:focus,
+#comment__text:focus {
+    outline: 1px cornflowerblue solid;
+}
+
+
