@@ -342,4 +342,12 @@ section.active .landing__container::after {
     outline: 1px cornflowerblue solid;
 }
 
+@media screen and (max-width: 425px){
+    .comment__form {
+        display: flex;
+        flex-direction: column;
+        gap: 3px
+    }
+}
+
 
